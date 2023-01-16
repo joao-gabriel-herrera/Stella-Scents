@@ -1,0 +1,331 @@
+/* cores base - primaria: #26C0A6 secundaria: #91E5A8 */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+/* Reset da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #91e5a8;
+}
+/* Ajustes nos links da página */
+a,
+.value {
+  color: #fff;
+}
+.icon_link {
+  text-decoration: none;
+  width: 20px;
+  height: 30px;
+}
+a:hover {
+  transition: 0.5s;
+  color: #ffc107;
+}
+.nav-link {
+  color: #000;
+}
+.nav-link:hover {
+  transition: 0.5s;
+  color: #555;
+}
+.site_title:hover {
+  color: #fff;
+}
+/* Tira a sombra do input de pesquisa  */
+form .form-control:focus {
+  box-shadow: none;
+}
+/* Ajuste de texto quando houver quebra de coluna */
+.col-12 {
+  text-align: center;
+  margin: 5px auto;
+}
+/* Tamanho da imagem do título da página */
+#logo_img {
+  width: 40px;
+  height: 40px;
+}
+/* Títulos de sessão */
+.section_title {
+  text-align: center;
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  background-color: #26c0a6;
+  color: #fff;
+}
+.card-text {
+  text-align: justify;
+}
+/* Banner de novidades */
+.banner::before {
+  content: "Os melhores";
+  color: #ffc107;
+}
+.banner::after {
+  content: "pelos melhores preços";
+  color: #ffc107;
+}
+.banner2::before {
+  content: "O que nossos";
+}
+.banner2::after {
+  content: "falam sobre nós?";
+  color: #ffc107;
+}
+/*Estilização de cards*/
+.card,
+.banner_bg {
+  box-shadow: -1px 9px 32px 0px rgba(0, 0, 0, 0.75);
+}
+/* Estilização do Rodapé (footer) */
+.footer_txt {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+}
+.footer_link {
+  color: #000;
+}
+.footer_link:hover {
+  transition: 0.3s;
+  color: #ffc107;
+}
+.footer_icon {
+  color: #ffc107;
+}
+.footer_icon:hover {
+  transition: 0.3s;
+  color: #fff;
+}
+/* Estilização do Formulário de contato */
+
+#staticBackdropLabel {
+  font-size: 25px;
+  margin-left: 80px;
+}
+form {
+  text-align: center;
+}
+h2#staticBackdropLabel.modal-title {
+  margin: auto;
+}
+#close {
+  margin: auto;
+}
+/*  Media querys do carousel da página */
+@media (min-width: 300px) {
+  .button_parfum {
+    margin: 20px 0;
+  }
+  .carousel-indicators {
+    margin-bottom: 0;
+  }
+  .banner_text {
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  .banner_text {
+    font-size: 17px;
+  }
+  .banner_text p:not(.name_scent) {
+    font-size: 10px;
+  }
+  .herrera,
+  .azzaro {
+    width: 120px;
+    height: 120px;
+  }
+  .oud {
+    width: 90px;
+    height: 120px;
+  }
+  .million {
+    width: 240px;
+    height: 240px;
+  }
+  .colunms {
+    padding: 0;
+  }
+  .smaller_text {
+    font-size: small;
+  }
+  .clients_box {
+    background-color: transparent;
+  }
+  .clients_text {
+    text-align: center;
+    padding: 5px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #26c0a6;
+    color: #fff;
+  }
+  .clients_text {
+    font-size: small;
+  }
+  .clients_av {
+    width: 18rem;
+    height: 18rem;
+  }
+  .clients_av_text {
+    font-size: smaller;
+  }
+  .social_media,
+  .copyright {
+    justify-content: center;
+    text-align: center;
+  }
+  .footer_txt {
+    font-size: 18px;
+  }
+  .phone {
+    font-size: 18px;
+  }
+}
+@media (min-width: 400px) {
+  .nav-link {
+    font-size: 20px;
+  }
+  .banner_text {
+    font-size: 25px;
+  }
+  .banner_text p:not(.name_scent) {
+    font-size: 10px;
+  }
+  .smaller_text {
+    font-size: medium;
+  }
+  .colunms {
+    padding: 0 12px;
+  }
+  .clients_text {
+    font-size: 15px;
+  }
+}
+@media (min-width: 576px) {
+  .banner_text {
+    font-size: 30px;
+  }
+  .banner_text p:not(.name_scent) {
+    font-size: 12px;
+  }
+  .herrera,
+  .azzaro {
+    width: 160px;
+    height: 160px;
+  }
+  .oud {
+    width: 120px;
+    height: 160px;
+  }
+  .smaller_text {
+    font-size: large;
+  }
+  .clients_text {
+    font-size: medium;
+  }
+  .clients_av {
+    width: 20rem;
+    height: 20rem;
+  }
+  .clients_av_text {
+    font-size: medium;
+  }
+  .social_media {
+    justify-content: end;
+  }
+  .copyright {
+    text-align: start;
+  }
+  .footer_txt {
+    font-size: 22px;
+  }
+  .phone {
+    font-size: 22px;
+  }
+}
+@media (min-width: 740px) {
+  .banner_text {
+    font-family: "Georgia", "Times New Roman", Times, serif;
+  }
+  .banner_text,
+  .oud,
+  .herrera,
+  .azzaro {
+    padding: 0;
+  }
+  .banner_text {
+    font-size: 35px;
+  }
+  .banner_text p:not(.name_scent) {
+    font-size: 15px;
+  }
+  .clients_text {
+    font-size: x-large;
+  }
+}
+@media (min-width: 900px) {
+  .banner_text {
+    font-size: 50px;
+  }
+  .banner_text p:not(.name_scent) {
+    font-size: 20px;
+  }
+  .banner_text,
+  .oud,
+  .herrera,
+  .azzaro {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  .herrera,
+  .azzaro {
+    width: 320px;
+    height: 360px;
+  }
+  .oud {
+    width: 240px;
+    height: 360px;
+  }
+}
+@media (min-width: 1120px) {
+  .banner_text {
+    font-size: 60px;
+  }
+  .banner_text p:not(.name_scent) {
+    font-size: 30px;
+  }
+  .banner_text,
+  .oud,
+  .herrera,
+  .azzaro {
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+  .herrera,
+  .azzaro {
+    width: 320px;
+    height: 400px;
+  }
+  .oud {
+    width: 240px;
+    height: 400px;
+  }
+  .million {
+    width: 320px;
+    height: 320px;
+  }
+  .clients_text {
+    font-size: x-large;
+  }
+}
+@media (min-width: 1200px) {
+  .clients_box {
+    background: linear-gradient(#000, #555);
+  }
+  .clients_text {
+    background-color: transparent;
+  }
+}
+@media (min-width: 1400px) {
+  .clients_text {
+    font-size: xx-large;
+  }
+}

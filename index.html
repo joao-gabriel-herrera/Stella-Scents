@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="João Gabriel Ortiz Herrera" />
+    <meta name="description" content="Loja de perfumes online" />
+    <meta
+      name="keywords"
+      content="perfumes, fragâncias, aromas, stella scents, stella, scents"
+    />
+    <!-- Css Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Javascript Projeto -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Icones bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
+    />
+    <!-- Css Projeto -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Favicon da página -->
+    <link rel="shortcut icon" href="img/fragrance.png" type="image/x-icon" />
+    <title>Stella Scents</title>
+  </head>
+  <body>
+    <!-- Navbar principal do site -->
+    <nav>
+      <div class="container-fluid h-auto">
+        <div
+          class="row d-flex align-items-center"
+          style="background-color: #1aa891; height: 150px"
+        >
+          <!-- Coluna do título do site -->
+          <div class="col-12 col-md-4" id="home">
+            <div
+              class="logo_container navbar-brand d-flex justify-content-center align-items-center"
+            >
+              <a href="#home">
+                <img
+                  src="img/fragrance.png"
+                  alt="Stella logo"
+                  id="logo_img"
+                  class="me-2"
+              /></a>
+              <h1>
+                <a href="#" class="text-decoration-none site_title"
+                  >Stella Scents</a
+                >
+              </h1>
+            </div>
+          </div>
+          <!-- Coluna do formulário de pesquisa -->
+          <div class="col-12 col-md-4">
+            <form class="d-flex">
+              <input
+                class="form-control me-2 rounded-5 border border-warning"
+                type="text"
+                placeholder="Busque aqui sua fragrância..."
+                aria-label="Buscar"
+              />
+
+              <button class="btn btn-warning rounded-5" type="button">
+                Buscar
+              </button>
+            </form>
+          </div>
+          <!-- Coluna dos ícones do site -->
+          <div class="col-12 col-md-4 p-0">
+            <div class="d-flex justify-content-center">
+              <a href="#" class="me-4 icon_link"
+                ><i class="bi bi-person fs-5"></i
+              ></a>
+              <a href="#" class="me-4 icon_link"
+                ><i class="bi bi-heart fs-5"></i
+              ></a>
+              <a href="#" class="me-2 icon_link"
+                ><i class="bi bi-cart4 fs-5"></i
+              ></a>
+              <p class="fs-6 mt-1 value">
+                <strong>R$ 1.654,29</strong>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Barra de navegação geral -->
+
+    <ul
+      class="nav d-flex justify-content-center position-sticky top-0 z-3 bg-warning"
+    >
+      <li class="nav-item">
+        <a class="nav-link active p-2" aria-current="page" href="#home"
+          >Início</a
+        >
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="#populares">Populares</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="#novidades">Novidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link p-2" href="#galeria">Clientes</a>
+      </li>
+    </ul>
+
+    <!-- Carousel de imagens -->
+    <section>
+      <div
+        id="carousel_main_page"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carousel_main_page"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Herrera for men"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel_main_page"
+            data-bs-slide-to="1"
+            aria-label="Essencial Oud"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carousel_main_page"
+            data-bs-slide-to="2"
+            aria-label="Azzaro pour homme"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- HERRERA FOR MEN -->
+          <div
+            class="carousel-item active p-3"
+            data-bs-interval="5000"
+            style="
+              background: linear-gradient(#2c241d, #69433b, #2c241d);
+              color: #dde0da;
+            "
+          >
+            <div class="d-flex justify-content-evenly">
+              <div class="banner_text text-start">
+                <p class="m-0">SENSUAL E SOFISTICADO</p>
+                <p class="fw-bold name_scent m-0">HERRERA FOR MEN</p>
+                <p class="m-0">FEITO PARA CAVALHEIROS</p>
+                <a href="#" class="btn btn-outline-secondary button_parfum"
+                  ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                >
+              </div>
+              <img
+                src="img/herrera-for-men.png"
+                class="herrera"
+                alt="herrera for men"
+              />
+            </div>
+          </div>
+          <!-- ESSENCIAL OUD -->
+          <div
+            class="carousel-item p-3"
+            data-bs-interval="5000"
+            style="
+              background: linear-gradient(#014a73, #1d7bae, #014a73);
+              color: #c49c68;
+            "
+          >
+            <div class="d-flex justify-content-evenly">
+              <div class="banner_text text-start">
+                <p class="m-0">AMADEIRADO INTENSO</p>
+                <p class="fw-bold name_scent m-0">ESSENCIAL OUD</p>
+                <p class="m-0">FAÇA SUA PRESENÇA MARCAR HISTÓRIA</p>
+                <a href="#" class="btn btn-outline-warning button_parfum"
+                  ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                >
+              </div>
+              <img
+                src="img/essencial-oud.png"
+                class="oud"
+                alt="essencial oud"
+              />
+            </div>
+          </div>
+          <!-- AZZARRO POUR HOMME -->
+          <div
+            class="carousel-item p-3"
+            data-bs-interval="5000"
+            style="
+              background: linear-gradient(#bf410c, #fec900, #bf410c);
+              color: #05060a;
+            "
+          >
+            <div class="d-flex justify-content-evenly">
+              <div class="banner_text text-start">
+                <p class="m-0">SEDUÇÃO LATINA</p>
+                <p class="fw-bold name_scent m-0">AZZARO</p>
+                <p class="m-0">UM CLÁSSICO ATEMPORAL</p>
+                <a href="#" class="btn btn-outline-dark button_parfum"
+                  ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                >
+              </div>
+              <img src="img/azzaro.png" class="azzaro" alt="azzaro" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Mais vendidos -->
+    <section>
+      <h1 class="section_title" id="populares">MAIS VENDIDOS</h1>
+      <div class="container-fluid mt-3 mb-3">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/herrera-for-men.png"
+                class="card-img-top bg-secondary"
+                style="
+                  background: linear-gradient(#2c241d, #69433b, #2c241d);
+                  color: #dde0da;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Herrera for men</h5>
+                <p class="card-text">
+                  Feita para o homem, Herrera for Men é uma fragrância atemporal
+                  plena de caráter, personalidade e estilo, que confere
+                  elegância e sofisticação ao homem que a usa, feita para
+                  cavalheiros.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-info-circle me-2"></i>Detalhes</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/channel_5.png"
+                class="card-img-top bg-secondary"
+                style="
+                  background: linear-gradient(#f3b40c, #dedace, #f3b40c);
+                  color: #05060a;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Nº 5 Channel</h5>
+                <p class="card-text">
+                  N°5, a verdadeira essência da feminilidade. Um bouquet floral
+                  de aldeídos, acondicionado em um frasco icônico de design
+                  minimalista. Um perfume atemporal e lendário.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-info-circle me-2"></i>Detalhes</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/dior_sauvage.png"
+                class="card-img-top bg-secondary"
+                style="
+                  background: linear-gradient(#014a73, #1d7bae, #014a73);
+                  color: #c49c68;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Sauvage Dior</h5>
+                <p class="card-text">
+                  Sauvage é o perfume masculino de Dior com um frescor radical,
+                  representado por François Demachy, Perfumista-Criador de Dior,
+                  que o quis assim: robusto e nobre ao mesmo tempo.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-info-circle me-2"></i>Detalhes</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 d-flex justify-content-center">
+            <div class="card" style="width: 18rem">
+              <img
+                src="img/azzaro.png"
+                class="card-img-top bg-secondary"
+                style="
+                  background: linear-gradient(#bf410c, #fec900, #bf410c);
+                  color: #05060a;
+                "
+              />
+              <div class="card-body">
+                <h5 class="card-title">Azzaro Pour Homme</h5>
+                <p class="card-text">
+                  Azzaro pour Homme é um concentrado de sedução genuinamente
+                  masculina que traduz a sedução latina. Um dos maiores
+                  clássicos da perfumaria masculina.
+                </p>
+                <a href="#" class="btn btn-primary"
+                  ><i class="bi bi-info-circle me-2"></i>Detalhes</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Anúncio especial -->
+    <section>
+      <div
+        class="container-fluid text-white pt-5 pb-5"
+        style="background-color: #05060a"
+      >
+        <div class="row">
+          <div class="col-12 col-md-8">
+            <p class="text-warning">Desconto de até 75%</p>
+            <h1>PACO RABANNE</h1>
+            <h1>ONE MILLION</h1>
+            <p class="text-secondary">
+              One Million tem encantado e provocado desde 2008. Um coquetel de
+              insolência e elegância. Os segredos do sucesso? Seu carisma
+              devastador, irresistível senso de humor e, acima de tudo, seu
+              poder quase mágico: um estalar de dedos e o sonho se torna
+              realidade.
+            </p>
+            <a href="#" class="btn btn-outline-warning button_parfum"
+              ><i class="bi bi-cart2 me-2"></i>Comprar</a
+            >
+          </div>
+          <div class="col-12 col-md-4">
+            <img src="img/one_million.png" class="million" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Novidades -->
+    <section>
+      <h1 class="section_title m-0 mb-lg-3" id="novidades">NOVIDADES</h1>
+      <div
+        class="smaller_devices mb-3 p-2 d-lg-none d-block text-center text-white bg-dark"
+      >
+        <p class="m-0 smaller_text">
+          "Os melhores <span class="text-warning">perfumes</span>, pelos
+          melhores preços!"
+        </p>
+      </div>
+      <div class="container-fluid mt-lg-5" style="width: 85%">
+        <div class="row">
+          <div
+            class="col-xl-3 col-0 text-white d-none d-xl-flex align-items-center justify-content-center rounded banner_bg"
+            style="background: no-repeat center/cover url(./img/bg_parfum.jpg)"
+          >
+            <div
+              class="banner pb-3 pt-3 ps-4 pe-4 rounded-pill"
+              style="background-color: rgba(0, 0, 0, 0.3)"
+            >
+              <h1>Perfumes</h1>
+            </div>
+          </div>
+          <div class="col-xl-9 col-12 colunms m-0">
+            <div class="row ms-1 d-flex justify-content-center">
+              <div
+                class="col-lg-4 col-12 col-sm-6 m-0 d-flex justify-content-center colunms"
+              >
+                <div class="card me-3 me-sm-0" style="width: 18rem">
+                  <img
+                    src="img/azzaro.png"
+                    class="card-img-top bg-secondary"
+                    style="
+                      background: linear-gradient(#bf410c, #fec900, #bf410c);
+                      color: #05060a;
+                    "
+                  />
+                  <div class="card-body">
+                    <p class="card-category">Eau de Toilette 100ml</p>
+                    <h5 class="card-title mb-3">Azzaro Pour Homme</h5>
+                    <p class="card-text text-start">
+                      <b>DE: </b><s>R$ 319,90</s>
+                    </p>
+                    <p class="card-text text-start">
+                      <b>POR APENAS:</b> R$ 199,90
+                    </p>
+                    <a href="#" class="btn btn-outline-success"
+                      ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-12 col-sm-6 m-0 d-flex justify-content-center colunms"
+              >
+                <div
+                  class="card mt-3 mt-sm-0 me-3 me-sm-0"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="img/herrera-for-men.png"
+                    class="card-img-top bg-secondary"
+                    style="
+                      background: linear-gradient(#2c241d, #69433b, #2c241d);
+                      color: #05060a;
+                    "
+                  />
+                  <div class="card-body">
+                    <p class="card-category">Eau de Toilette 100ml</p>
+                    <h5 class="card-title mb-3">Herrera for men</h5>
+                    <p class="card-text text-start">
+                      <b>DE: </b><s>R$ 419,90</s>
+                    </p>
+                    <p class="card-text text-start">
+                      <b>POR APENAS:</b> R$ 299,90
+                    </p>
+                    <a href="#" class="btn btn-outline-success"
+                      ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-12 col-sm-6 m-0 d-flex justify-content-center colunms"
+              >
+                <div
+                  class="card mt-3 mt-lg-0 me-3 me-sm-0"
+                  style="width: 18rem"
+                >
+                  <img
+                    src="img/channel_5.png"
+                    class="card-img-top bg-secondary"
+                    style="
+                      background: linear-gradient(#f3b40c, #dedace, #f3b40c);
+                      color: #05060a;
+                    "
+                  />
+                  <div class="card-body">
+                    <p class="card-category">Eau de Parfum 100ml</p>
+                    <h5 class="card-title mb-3">Nº 5 Channel</h5>
+                    <p class="card-text text-start">
+                      <b>DE: </b><s>R$ 1.199,90</s>
+                    </p>
+                    <p class="card-text text-start">
+                      <b>POR APENAS:</b> R$ 789,90
+                    </p>
+                    <a href="#" class="btn btn-outline-success"
+                      ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-12 col-sm-6 m-0 d-flex justify-content-center colunms"
+              >
+                <div class="card mt-3 me-3 me-sm-0" style="width: 18rem">
+                  <img
+                    src="img/dior_sauvage.png"
+                    class="card-img-top bg-secondary"
+                    style="
+                      background: linear-gradient(#014a73, #1d7bae, #014a73);
+                      color: #05060a;
+                    "
+                  />
+                  <div class="card-body">
+                    <p class="card-category">Eau de Toilette 100ml</p>
+                    <h5 class="card-title mb-3">Sauvage Dior</h5>
+                    <p class="card-text text-start">
+                      <b>DE: </b><s>R$ 739,90</s>
+                    </p>
+                    <p class="card-text text-start">
+                      <b>POR APENAS:</b> R$ 599,90
+                    </p>
+                    <a href="#" class="btn btn-outline-success"
+                      ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-12 col-sm-6 m-0 d-flex justify-content-center colunms"
+              >
+                <div class="card mt-3 me-3 me-sm-0" style="width: 18rem">
+                  <img
+                    src="img/ultra_male.png"
+                    class="card-img-top bg-secondary"
+                    style="
+                      background: linear-gradient(#33639b, #c40204, #33639b);
+                      color: #05060a;
+                    "
+                  />
+                  <div class="card-body">
+                    <p class="card-category">Eau de Toilette 125ml</p>
+                    <h5 class="card-title mb-3">JPG Ultra male</h5>
+                    <p class="card-text text-start">
+                      <b>DE: </b><s>R$ 529,90</s>
+                    </p>
+                    <p class="card-text text-start">
+                      <b>POR APENAS:</b> R$ 399,90
+                    </p>
+                    <a href="#" class="btn btn-outline-success"
+                      ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="col-lg-4 col-12 col-sm-6 m-0 d-flex justify-content-center colunms"
+              >
+                <div class="card mt-3 me-3 me-sm-0" style="width: 18rem">
+                  <img
+                    src="img/bleu_de_channel.png"
+                    class="card-img-top bg-secondary"
+                    style="
+                      background: linear-gradient(#0a0e1a, #b3b4b9, #0a0e1a);
+                      color: #05060a;
+                    "
+                  />
+                  <div class="card-body">
+                    <p class="card-category">Eau de Parfum 100ml</p>
+                    <h5 class="card-title mb-3">Bleu de channel</h5>
+                    <p class="card-text text-start">
+                      <b>DE: </b><s>R$ 789,90</s>
+                    </p>
+                    <p class="card-text text-start">
+                      <b>POR APENAS:</b> R$ 649,90
+                    </p>
+                    <a href="#" class="btn btn-outline-success"
+                      ><i class="bi bi-cart2 me-2"></i>Comprar</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Galeria dos clientes -->
+    <div
+      class="container-fluid mt-5 d-flex justify-content-center"
+      style="width: 85%"
+      id="galeria"
+    >
+      <div class="row p-xl-5 rounded-pill clients_box">
+        <h1 class="clients_text mb-4 rounded-pill">
+          O que nossos <span class="text-warning">clientes</span> falam sobre
+          nós?
+        </h1>
+        <div
+          class="col-xxl-3 col-12 col-md-6 m-0 d-flex justify-content-center p-2"
+        >
+          <div class="card clients_av p-3 rounded-circle">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="img/Tony Stark.png"
+                  class="card-img-top me-2 rounded-circle border border-warning border-3 w-25"
+                />
+                <h3 class="m-0">Tony Stark</h3>
+              </div>
+              <h6 class="text-secondary">CEO of Stark Ind.</h6>
+              <p class="card-text clients_av_text">
+                Nunca havia tido uma experiência tão boa adquirindo produtos
+                on-line, atendimento muito satisfatório e entrega muito pontual,
+                pretendo fazer mais compras!!!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xxl-3 col-12 col-md-6 p-2 m-0 d-flex justify-content-center colunms"
+        >
+          <div class="card clients_av p-3 rounded-circle">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="img/Steve Jobs.png"
+                  class="card-img-top me-2 rounded-circle border border-warning border-3 w-25"
+                />
+                <h3 class="m-0">Steve Jobs</h3>
+              </div>
+              <h6 class="text-secondary">CEO of Apple Inc.</h6>
+              <p class="card-text clients_av_text">
+                È disso que eu preciso mais! lojas confiáveis, com entrega
+                rápida e com um cuidado especial ao embalar os produtos!
+                ganharam um cliente!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xxl-3 col-12 col-md-6 p-2 m-0 d-flex justify-content-center colunms"
+        >
+          <div class="card clients_av p-3 rounded-circle">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="img/Stella Lauany.png"
+                  class="card-img-top me-2 rounded-circle border border-warning border-3 w-25"
+                />
+                <h3 class="m-0">Stella L.</h3>
+              </div>
+              <h6 class="text-secondary">Engineer on MRV</h6>
+              <p class="card-text clients_av_text">
+                Me impressionei com a qualidade do produto e com o cuidado da
+                embalagem, uma entrega super rápida! recomendo para todos!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-xxl-3 col-12 col-md-6 p-2 m-0 d-flex justify-content-center colunms"
+        >
+          <div class="card clients_av p-3 rounded-circle">
+            <div class="card-body">
+              <div class="d-flex align-items-center justify-content-center">
+                <img
+                  src="img/Arthur Morreti.png"
+                  class="card-img-top me-2 rounded-circle border border-warning border-3 w-25"
+                />
+                <h3 class="m-0">Arthur M.</h3>
+              </div>
+              <h6 class="text-secondary">CCIE on IBM</h6>
+              <p class="card-text clients_av_text">
+                Parábens a equipe da Stella Scents pela qualidade no envio do
+                produto, pessoal super atencioso e responsável com os prazos!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Rodapé da página -->
+    <div class="container-fluid mt-5" style="background-color: #26c0a6">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-lg-2 mb-3 text-center">
+            <h4 class="footer_txt">Páginas</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#home" class="nav-link p-0 footer_link">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#populares" class="nav-link p-0 footer_link"
+                  >Populares</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#novidades" class="nav-link p-0 footer_link"
+                  >Novidades</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#galeria" class="nav-link p-0 footer_link">Clientes</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-lg-2 mb-3 text-center">
+            <h4 class="footer_txt">Stella Scents</h4>
+            <p class="text-muted m-0">Alguma dúvida? Ligue para nós!</p>
+            <h3 class="text-warning phone m-0">
+              <span class="bi bi-telephone me-1 text-dark"></span>(18)
+              99999-9999
+            </h3>
+            <p class="text-muted m-0">ou</p>
+            <p class="text-muted">
+              Entre em contato
+              <a
+                class="text-decoration-none"
+                href="#staticBackdrop"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+                >aqui</a
+              >
+            </p>
+          </div>
+
+          <div class="col-6 col-lg-2 mb-3 text-center">
+            <h4 class="footer_txt">Informações</h4>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer_link"
+                  >Politíca de Privacidade</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer_link"
+                  >Politíca de entrega</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer_link"
+                  >Rastreie seu pedido</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 footer_link"
+                  >Trabalhe conosco</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-lg-1 mb-3 text-center">
+            <form>
+              <h4 class="footer_txt">
+                Receba promoções quentinhas no seu e-mail!
+              </h4>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control rounded-5"
+                  placeholder="Insira seu e-mail..."
+                />
+                <button class="btn btn-warning rounded-5" type="button">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p class="text-white copyright">
+            &copy; 2022 Stella Scents, Todos direitos reservados
+          </p>
+          <ul class="list-unstyled d-flex social_media">
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><span class="bi bi-twitter fs-3 footer_icon"></span
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><span class="bi bi-facebook fs-3 footer_icon"></span
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><span class="bi bi-instagram fs-3 footer_icon"></span
+              ></a>
+            </li>
+            <li class="ms-3">
+              <a class="link-dark" href="#"
+                ><span class="bi bi-whatsapp fs-3 footer_icon"></span
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <!-- Formulário de contato -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2 class="modal-title" id="staticBackdropLabel">
+              Como podemos te ajudar?
+            </h2>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+              id="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label"></label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="Insira seu nome"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label"></label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="Insira seu e-mail"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="message-text" class="form-label"></label>
+                <textarea
+                  class="form-control"
+                  id="message-text"
+                  placeholder="Digite aqui sua dúvida..."
+                  style="resize: none"
+                  rows="10"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-warning">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
